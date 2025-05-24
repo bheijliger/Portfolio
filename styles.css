@@ -79,9 +79,11 @@ nav ul li a:hover {
 }
 
 .certificate-iframe {
-    width: 100vh;
-    height: 100vh;
+    width: 1123px;   /* Landscape A4 width */
+    height: 794px;   /* Landscape A4 height */
     max-width: 100%;
     border: none;
     background: #fff;
+    display: block;
+    margin: 0 auto;
 }
