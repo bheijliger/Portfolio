@@ -22,6 +22,15 @@ body {
     align-items: center;
 }
 
+.pdf-center iframe {
+    width: 100%;
+    max-width: 900px;
+    height: 60vh;
+    border: none;
+    display: block;
+    margin: 0 auto;
+}
+
 .img-center {
     display: flex;
     justify-content: center;
