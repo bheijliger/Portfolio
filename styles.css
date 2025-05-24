@@ -22,12 +22,12 @@ body {
     align-items: center;
 }
 
-.pdf-center iframe {
+.pdf-iframe {
+    display: block;
     width: 100%;
     max-width: 900px;
     height: 100vh;
     border: none;
-    display: block;
     margin: 0 auto;
 }
 
