@@ -74,7 +74,7 @@ nav ul li a:hover {
 .certificate-pdf {
     position: relative;
     width: 100%;
-    max-width: 900px;
+    max-width: 100vh;
     aspect-ratio: 4 / 3; /* Common aspect ratio; adjust as needed */
     margin: 16px auto 0 auto;
     background: #fff;
