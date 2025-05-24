@@ -72,18 +72,26 @@ nav ul li a:hover {
 }
 
 .certificate-pdf {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    aspect-ratio: 4 / 3; /* Common aspect ratio; adjust as needed */
+    margin: 16px auto 0 auto;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 16px;
 }
 
 .certificate-iframe {
-    width: 1123px;   /* Landscape A4 width */
-    height: 794px;   /* Landscape A4 height */
-    max-width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     border: none;
     background: #fff;
     display: block;
-    margin: 0 auto;
 }
