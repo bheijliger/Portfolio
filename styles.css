@@ -143,12 +143,3 @@ nav ul li a:hover {
     object-fit: cover;
 }
 
-/* About content styles: flexible width and minimum size */
-.about-content {
-    flex: 1;
-    min-width: 200px;
-    max-width: 500px; /* Adjust this value as needed for your layout */
-    word-break: break-word;
-}
-
-
