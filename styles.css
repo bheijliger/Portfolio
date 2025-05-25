@@ -126,24 +126,4 @@ nav ul li a:hover {
     line-height: 1.6;
 }
 
-/* Flexbox layout for modules: space between, align start, gap, margin */
-.modules-flex {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 32px;
-    margin-bottom: 32px;
-}
-
-/* Style for dropdowns in modules: flex, min/max width, border, background, shadow */
-.modules-dropdown {
-    flex: 1 1 0;
-    min-width: 320px;
-    max-width: 48%;
-    border: 2px solid #0c36c0;
-    border-radius: 12px;
-    background: #181818;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-}
-
 
