@@ -95,3 +95,13 @@ nav ul li a:hover {
     background: #fff;
     display: block;
 }
+
+.modules-list {
+    margin: 24px auto;
+    max-width: 800px;
+    padding-left: 20px;
+}
+.modules-list li {
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
