@@ -157,3 +157,22 @@ nav ul li a:hover {
     margin-bottom: 12px;
     line-height: 1.6;
 }
+
+/* University dropdown container: background, border radius, shadow, and padding */
+.university-details {
+    margin-bottom: 24px;
+    border-radius: 12px;
+    background: #181818;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    padding: 16px 24px;
+    border: 2px solid #888;
+}
+
+/* Summary style for universities: font size, weight, padding, cursor, and outline */
+.university-summary {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 16px 0;
+    cursor: pointer;
+    outline: none;
+}
