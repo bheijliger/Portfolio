@@ -126,4 +126,29 @@ nav ul li a:hover {
     line-height: 1.6;
 }
 
+/* About section styles: flex layout, gaps, and margins */
+.about-flex {
+    display: flex;
+    align-items: flex-start;
+    gap: 32px;
+    margin-bottom: 32px;
+}
+
+/* About photo styles: rounded corners, shadow, size, and cropping */
+.about-photo {
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+}
+
+/* About content styles: flexible width and minimum size */
+.about-content {
+    flex: 1;
+    min-width: 200px;
+    max-width: 500px; /* Adjust this value as needed for your layout */
+    word-break: break-word;
+}
+
 
