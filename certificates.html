@@ -1,48 +1,55 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Certificates - Boris Heijliger-Krogulski</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificates - My Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <nav>
         <ul>
-            <li><a href="index.html">About Me</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="projects.html">Projects</a></li>
-            <li><a href="certificates.html">Certificates</a></li>
+            <li><a href="#certificates" class="active">Certificates</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
-    <h1>Certificates</h1>
 
-    <div class="certificate">
-        <h2>BSc Honours Mathematics with a Year Abroad</h2>
-        <div class="certificate-pdf">
-            <iframe src="pdfs/BSc_Degree.pdf" class="certificate-iframe"></iframe>
-        </div>
-    </div>
+    <main class="container">
+        <section id="certificates">
+            <h2>Certifications</h2>
+            <div class="certificates-container">
+                <article class="certificate fade-in">
+                    <h3>Full Stack Web Development</h3>
+                    <div class="certificate-pdf">
+                        <iframe src="https://example.com/certificate1.pdf" title="Certificate 1"></iframe>
+                    </div>
+                </article>
+                <article class="certificate fade-in">
+                    <h3>Cloud Architecture</h3>
+                    <div class="certificate-pdf">
+                        <iframe src="https://example.com/certificate2.pdf" title="Certificate 2"></iframe>
+                    </div>
+                </article>
+                <article class="certificate fade-in">
+                    <h3>Data Science Specialization</h3>
+                    <div class="certificate-pdf">
+                        <iframe src="https://example.com/certificate3.pdf" title="Certificate 3"></iframe>
+                    </div>
+                </article>
+                <article class="certificate fade-in">
+                    <h3>UX Design Fundamentals</h3>
+                    <div class="certificate-pdf">
+                        <iframe src="https://example.com/certificate4.pdf" title="Certificate 4"></iframe>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
 
-    <!-- 
-    <div class="certificate">
-        <h2>[Certificate Title]</h2>
-        <div class="certificate-pdf">
-            <iframe src="pdfs/[your_certificate.pdf]" class="certificate-iframe"></iframe>
-        </div>
-    </div>
-    -->
-
-    <div class="certificate">
-        <h2>A Level</h2>
-        <div class="certificate-pdf">
-            <iframe src="pdfs/A_Level.pdf" class="certificate-iframe"></iframe>
-        </div>
-    
-    <div class="certificate">
-        <h2>IGCSE</h2>
-        <div class="certificate-pdf">
-            <iframe src="pdfs/IGCSE.pdf" class="certificate-iframe"></iframe>
-        </div>
     <footer>
-        <p>© 2023 Boris Heijliger-Krogulski</p>
+        <p>&copy; 2023 John Doe. All rights reserved.</p>
     </footer>
 </body>
 </html>
