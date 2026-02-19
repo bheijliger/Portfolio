@@ -123,10 +123,33 @@ h1 {
     color: #d1d1d1;
 }
 
+/* PDF display area */
+.project-pdf {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    margin: 16px 0 0 0;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-pdf iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
 /* Certificates section */
 .certificates-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     gap: 30px;
     margin-bottom: 40px;
 }
@@ -158,7 +181,7 @@ h1 {
     align-items: center;
 }
 
-.certificate-iframe {
+.certificate-pdf iframe {
     position: absolute;
     top: 0;
     left: 0;
