@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="fixed w-full bg-white shadow z-50">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+      <h1 class="text-xl font-bold">My Portfolio</h1>
+      <div class="space-x-4 text-sm md:text-base">
+        <a href="#about" class="hover:text-blue-500">About</a>
+        <a href="#certifications" class="hover:text-blue-500">Certifications</a>
+        <a href="#projects" class="hover:text-blue-500">Projects</a>
+        <a href="#contact" class="hover:text-blue-500">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- About -->
+  <section id="about" class="pt-24 pb-16">
+    <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h2 class="text-3xl font-bold mb-4">About Me</h2>
+        <p class="text-lg leading-relaxed">
+          Write a short introduction about yourself here. Mention your skills, interests, and goals.
+        </p>
+      </div>
+      <div class="flex justify-center">
+        <img src="Personal Image.jpeg" alt="Personal Image" class="rounded-2xl shadow-lg w-64 h-64 object-cover" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications -->
+  <section id="certifications" class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-8">Certifications</h2>
+      <div id="certificationsGrid" class="grid md:grid-cols-2 gap-8"></div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="py-16">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-8">Projects</h2>
+      <div id="projectsGrid" class="grid md:grid-cols-2 gap-8"></div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-16 bg-white">
+    <div class="max-w-3xl mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-6">Contact Me</h2>
+      <form class="space-y-4">
+        <input type="text" placeholder="Your Name" class="w-full p-3 border rounded-lg" />
+        <input type="email" placeholder="Your Email" class="w-full p-3 border rounded-lg" />
+        <textarea placeholder="Your Message" rows="5" class="w-full p-3 border rounded-lg"></textarea>
+        <button class="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="text-center py-6 text-sm text-gray-500">
+    © 2026 My Portfolio
+  </footer>
+
+  <script>
+    // =========================
+    // DATA (EDIT ONLY THIS)
+    // =========================
+
+    const certifications = [
+      { title: "MSc Actuarial Science with Business Analytics", file: "pdfs/MSc Certificate.pdf" },
+      { title: "BSc Honours Mathematics", file: "pdfs/BSc_Degree.pdf" },
+      { title: "A Level", file: "pdfs/A_Level.pdf" },
+      { title: "IGCSE", file: "pdfs/IGCSE.pdf" }
+    ];
+
+    const projects = [
+      { title: "Project 1", file: "pdfs/project1.pdf" },
+      { title: "Project 2", file: "pdfs/project2.pdf" },
+      { title: "Project 3", file: "pdfs/project3.pdf" },
+      { title: "Project 4", file: "pdfs/project4.pdf" },
+      { title: "Project 5", file: "pdfs/project5.pdf" }
+    ];
+
+    // =========================
+    // RENDER FUNCTIONS
+    // =========================
+
+    function renderItems(data, containerId) {
+      const container = document.getElementById(containerId);
+
+      data.forEach(item => {
+        const card = document.createElement("div");
+        card.className = "bg-gray-100 p-4 rounded-2xl shadow";
+
+        card.innerHTML = `
+          <h3 class="font-semibold mb-2">${item.title}</h3>
+          <iframe src="${item.file}" class="w-full h-96 rounded"></iframe>
+        `;
+
+        container.appendChild(card);
+      });
+    }
+
+    renderItems(certifications, "certificationsGrid");
+    renderItems(projects, "projectsGrid");
+  </script>
+
+</body>
+</html>
